@@ -1,0 +1,56 @@
+a{text-decoration: none;color:white;}
+p{margin:0;padding: 0}
+.clearfix{overflow: hidden;}
+/* -- 底部版权 -- */
+.ft-share{
+	text-align: center;
+	margin:20px 0;
+}
+.ft-share>span{font-size: 12px;}
+.share-list{margin-right:25px;}
+/*.share-list>i{*/
+	/*display: inline-block;*/
+	/*width:18px;
+	height:18px;*/
+	/*vertical-align: middle;*/
+/*}*/
+.share-list:hover{color:red;}
+/* - copy - */
+.ft-copy{
+	width:930px;
+	margin:0 auto;
+}
+.ft-copy>div,.copy-r-b p{float: left;}
+.copy-l{
+	margin:0 20px 0 25px;
+	padding-top:5px;
+}
+.copy-l img{
+	vertical-align: top;
+}
+#netease{
+	display:inline-block;
+	background:url("../images/netease.2.png");
+	width:118px;
+	height:31px;
+}
+#nie{
+	display:inline-block;
+	background:url("../images/nie.2.png");
+	width:134px;
+	height:31px;
+}
+.pl-2{padding-left:12px;}
+.copy-r p,.copy-r span,.copy-r a{font-size: 12px;}
+.copy-r-t>p,.copy-r-b>span{color:white;}
+.copy-r a:hover{
+	text-decoration: underline;
+}
+.copy-r-b{margin-top:5px;}
+.copy-r-b>span{line-height: 25px;}
+.parent{
+	float: right;
+	background-color: #610000;
+	color:white;
+	padding:5px 3px;
+}

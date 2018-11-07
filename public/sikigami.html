@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>式神录</title>
+		<meta name="description" content="式神简介">
+		<meta name="keywords" content="式神">
+		<link rel="stylesheet" href="./lib/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="./css/s_header.css">
+		<link rel="stylesheet" href="./css/sikigami.css">
+		<script type="text/javascript" src="./lib/jquery/jquery.min.js"></script>
+		<style>
+			#logo{
+				position: absolute;
+			    left: 50px;
+			    top: 38px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bg f-position">
+			<div id="header">
+			</div>
+			<div class="container clearfix" id="app">
+				<div id="logo"><img src="./images/100.webp" alt=""></div>
+				<div class="ss-l">
+					<div class="ss-l-logo"></div>
+					<div class="ss-l-select">
+						<ul>
+							<li>
+								<a href="javascript:void(0)" class="f-position active" data-active="1" @click="getLists()">
+									<span class="arrow"></span>
+									<i class="select-icon icon-all"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="f-position" data-active="0" @click="getLists('',1)">
+									<span class="arrow"></span>
+									<i class="select-icon icon-liandong"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="f-position" data-active="0" @click="getLists('sp')">
+									<span class="arrow"></span>
+									<i class="select-icon icon-sp"></i>
+								</a>
+							</li>
+							<li >
+								<a href="javascript:void(0)" class="f-position" data-active="0" @click="getLists('ssr')">
+									<span class="arrow"></span>
+									<i class="select-icon icon-ssr"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="f-position" data-active="0" @click="getLists('sr')">
+									<span class="arrow"></span>
+									<i class="select-icon icon-sr"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="f-position" data-active="0" @click="getLists('r')">
+									<span class="arrow"></span>
+									<i class="select-icon icon-r"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="f-position" data-active="0" @click="getLists('n')">
+									<span class="arrow"></span>
+									<i class="select-icon icon-n"></i>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:void(0)" class="f-position" data-active="0" @click="getLists('呱')">
+									<span class="arrow"></span>
+									<i class="select-icon icon-gt"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="ss-l-search">
+						<i class="select-icon icon-search"></i>
+						<input type="text">
+						<a href="#">搜索</a>
+					</div>
+				</div>
+				<div class="ss-r" style="width:985px;">
+					<div class="ss-r-skgm">
+						<div class="clearfix">
+							<div class="sikigami" v-for="list in lists" :key="list.sid" >
+								<a href="tenngu.html" class="f-position">
+									<div class="con-sikigami f-position">
+										<img :src="list.img_url" alt="">
+										<span class="position-lt"></span>
+									</div>
+									<p>{{list.sname}}</p>
+									<div class="cover position-lt">
+										<span></span>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div id="scroll-more" :class="isScroll?'':'hidden'">
+						<p>滚动加载更多式神</p>
+						<span></span>
+					</div>
+					<div class="footer">
+						<div class="ft-share">
+							<span>分享到：</span>
+							<a href="#" class="share-list">
+								<!-- <i class="fa fa-weixin"></span> -->
+								<span>微信</span>
+							</a>
+							<a href="#" class="share-list">
+								<!-- <i class="fa fa-angle-down"></i> -->
+								<span>易信</span>
+							</a>
+							<a href="#" class="share-list">
+								<!-- <i class="fa fa-weibo"></i> -->
+								<span>新浪微博</span>
+							</a>
+							<a href="#" class="share-list">
+								<!-- <i class="fa fa-qq"></i> -->
+								<span>QQ空间</span>
+							</a>
+						</div>
+						<div class="ft-copy clearfix">
+							<div class="copy-l">
+								<a href="#">
+									<img src="./images/netease.1.png" alt="">
+								</a>
+								<a href="#">
+									<img src="./images/nie.1.png" alt="">
+								</a>
+								<a href="#" class="pl-2">
+									<img src="./images/wen.png" alt="">
+								</a>
+								<a href="#" class="pl-2">
+									<img src="./images/wen2.png" alt="">
+								</a>
+							</div>
+							<div class="copy-r">
+								<div class="copy-r-t">
+									<p><a href="#">公司简介</a> - <a href="#">客户服务</a> - <a href="#">相关法律</a> - <a href="#">网易游戏</a> - <a href="#">联系我们</a> - <a href="#">商务合作</a> - <a href="#">加入我们</a> - <a href="#">用户协议</a></p>
+								</div>
+								<div class="copy-r-b clearfix">
+									<span>网易公司版权所有 &copy;1997-2018</span>
+									<a href="#" class="parent">点击查看家长监护工程 &gt;</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="./lib/vue/vue.js"></script>
+		<script src="./lib/vue/axios.min.js"></script>
+		<script>
+			var vm = new Vue({
+				el:"#app",
+				data:{
+					lists:[],
+					isScroll:true
+				},
+				methods:{
+					getLists(rare,ld){
+						var url = "http://localhost:3000/sikigami";
+						if(ld) url+="?liandong=1"
+						else url = rare?(url+"?rare="+rare):url;
+						axios.get(url).then((res)=>{
+							this.lists = res.data;
+							//this.$nextTick(); 等待渲染完成后执行
+							this.$nextTick(() =>{
+								//  -- 滚动加载更多的提示，如果能滚动，显示 --
+								$(function(){
+									var height = parseInt($(".ss-r-skgm").children().css("height"));
+									vm.isScroll = height<=579?false:true;
+								});
+							})
+						});
+					}
+				},
+				created(){
+					this.getLists();
+				},
+			})
+		</script>
+		<script src="./js/sikigami.js"></script>
+	</body>
+</html>
+

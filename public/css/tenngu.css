@@ -1,0 +1,783 @@
+body,ul,input,p,a,h1,h3{margin:0;padding:0;font-size:14px;}
+body{
+	max-width: 1920px;
+    margin: 0 auto;
+    min-width: 1400px;
+}
+ul{list-style: none;}
+a{
+	text-decoration: none;
+	color:black;
+	font-size: 14px;
+}
+/*div,p,a,img,h3{border:solid 1px red;}*/
+a,img{
+    /*vertical-align: middle;*/
+}
+.f-position{
+	position: relative;
+}
+.clearfix{overflow: hidden;}
+.main{
+	width:100%;
+	border:solid 1px red;
+}
+.main #logo{
+	/* transform: scale(0.8); */
+}
+/* --- 左右悬浮的 emm 小广告 ---*/
+.tab-fixed{
+	position: fixed;
+	top: 50%;
+	z-index: 30;
+}
+.left{left:30px;}
+.right{right:30px;}
+/* -- 最上面 式神皮肤 -- */
+.sikigami-bg{
+	position: relative;
+	background:url(../images/tenngu/main_banner_a44c1dc.jpg) no-repeat center;
+	width:100%;
+	height: 694px;
+    z-index: 10;
+}
+.sikigami-bg>div{
+	position: absolute;
+    left: 50%;
+}
+/* - 左边logo - */
+div.bg-shower{
+	left:50%;
+	margin-left: -960px;
+	height:100%;
+	width:562px;
+	background: rgba(0,0,0,.6);
+	z-index: 10;
+}
+.url-page{
+	background: url(../images/tenngu/page_z_8c36890.png) no-repeat;
+}
+.bg-logo{
+	position: absolute;
+	top: 110px; 
+	right:30px;
+	background-position:0px 0px;
+	width: 173px;
+    height: 458px;
+}
+.skgm-search{
+	position: fixed;
+	top:15px;
+	left: 112px;
+	z-index: 99;
+}
+.skgm-search>input,.btn-search{
+	float: left;
+    line-height: 24px;
+}
+.skgm-search>input{
+	width: 144px;
+    height: 24px;
+    color: #70a3b3;
+    background: #495573;
+    text-indent: 10px;
+    border:0;
+}
+a.btn-search{
+	display: inline-block;
+	width: 46px;
+    height: 100%;
+    background: #366f95;
+    color: #7dc9d7;
+    font-size: 14px;
+    text-align: center;
+}
+/* - 右边名字 立绘 - */
+.bg-r{
+    margin-left: -295px;
+    width: 830px;
+    height: 100%;
+}
+.bg-r>div{position: absolute;}
+/* - 名字 - */
+.person-name{
+	background-position:-1078px -458px;
+    top: 165px;
+    left: 0;
+    width: 54px;
+    height: 297px;
+    z-index: 10;
+}
+.person-name>a{
+	display: inline-block;
+	margin:-26px 0 0 -12px;
+	background-position: -1318px -458px;
+	width: 80px;
+    height: 94px;
+    vertical-align: bottom;
+}
+.person-name>p{
+	text-align: center;
+	width: 100%;
+    height: 158px;
+    font-size: 30px;
+    font-weight: bold;
+    color:#333;
+}
+.person-name>span{
+	display: inline-block;
+	background-position: -1372px -703px;
+	width: 80px;
+    height: 50px;
+    margin-left: -13px;
+}
+/* - 立绘 - */
+.person-pic{
+	left:-20px;
+	width:830px;
+	height:696px;
+}
+.image-con{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height:100%;
+}
+.show{display: block;}
+/* - tab - */
+.person-tab{
+    background: url(../images/tenngu/string_bg_1cc78ca.png) no-repeat 50% 50%;
+	left: 222px;
+    bottom: 103px;
+    width: 298px;
+    height: 60px;
+}
+.person-tab>a{
+	position: absolute;
+	width: 120px;
+    height: 124px;
+}
+.person-tab>a>i{
+	display: inline-block;
+	width:100%;
+	height:100%;
+}
+.p-tab-f{
+	left: -50px;
+    top: -40px;
+}
+.p-tab-f i{background: url(../images/tenngu/chuchi-btn_0116701.png) no-repeat center 50%;}
+.p-tab-f .cur{background:url(../images/tenngu/chuchi-btn_h_ccfbe7c.png) no-repeat;}
+.p-tab-s{
+	left: 97px;
+    top: -10px;
+}
+.p-tab-s i{background: url(../images/tenngu/juexing-h-btn_fe6e4cd.png) no-repeat center 50%;}
+.p-tab-s .cur{background:url(../images/tenngu/juexing-h-btn_h_43ad219.png) no-repeat;}
+.p-tab-t{
+	right: -70px;
+    top: -40px;
+}
+.p-tab-t i{background: url(../images/tenngu/pifu-h-btn_ee2b509.png) no-repeat center 50%;}
+.p-tab-t .cur{background:url(../images/tenngu/pifu-h-btn_h_86828d5.png) no-repeat;}
+.resource-download{
+	background: url(../images/tenngu/opening-resources_btn_6bf3295.png) no-repeat;
+	width: 34px;
+    height: 132px;
+    left: 20px;
+	top: 510px;
+}
+/* -- 模板 -- */
+.section-model{
+	position: relative;
+	width:100%;
+	padding:70px 0;
+}
+.section-model>div{
+	position: relative;
+	width:1200px;
+	/*height:427px;*/
+	margin:0px auto;
+}
+.section-model>div>h3{
+	margin-top:-7px;
+	background-position: -1278px -755px;
+	width: 192px;
+    height: 86px;
+}
+.section-con{
+	position: absolute;
+	background: url(../images/tenngu/page_z_8c36890.png) no-repeat;
+	background-position: 0px -458px;
+	width: 1078px;
+    height: 100%;
+    top:0;
+    right:0;
+}
+/* -- 01-传记 -- */
+.biography>div{height:427px;}
+/* - cv - */
+.s-con-cv{
+	display: inline-block;
+	position: absolute;
+	background-position: -1179px -458px;
+	left: 250px;
+    top: 32px;
+	width: 47px;
+    height: 151px;
+    color:white;
+    text-align: center;
+}
+.s-con-cv>span,.s-con-cv>i{display: inline-block;}
+.s-con-cv>span:first-child{
+	margin-top: 16px;
+}
+.s-con-cv>span:nth-child(2){
+	width:25px;
+	line-height: 14px;
+}
+.s-con-cv>i{
+	margin-top:3px;
+	background-position: -491px -428px;
+	width: 25px;
+    height: 25px;
+}
+/* - 内容 - */
+.s-con-txt{
+	float: right;
+	max-width: 781px;
+	min-width: 664px;
+	height: 372px;
+	padding-top:33px;
+}
+.s-con-txt>h3,.s-con-txt>div{float: right;}
+.s-con-txt>h3{
+	border-left:solid 1px black;
+	width: 86px;
+	height:372px;
+	/*height:369px;*/
+	text-align: center;
+}
+.s-con-txt>h3>i{
+	display: block;
+	margin:0 auto;
+	background-position: -421px -428px;
+	width: 45px;
+    height: 27px;
+}
+.s-con-txt>h3>span{
+	display: inline-block;
+	margin-top:20px;
+	width:18px;
+	line-height: 16px;
+	font-size: 16px;
+	color: #bb391c;
+}
+.con-txt{
+	margin-top:-3px;
+	padding-right:45px;
+	height:100%;
+}
+.con-txt>p{
+	float: right;
+	border-left:dashed 1px #d7d7d7;;
+	text-align: center;
+	height:100%;
+	width:52px;
+}
+.con-txt>p>span{
+	display: inline-block;
+	width:15px;    
+	word-wrap: break-word;
+	line-height: 14px;
+}
+/* -- 02-情报 -- */
+.skill-information{background: #f1efe9;padding:90px 0 48px}
+.skill-information>div{height:585px;}
+.skill-information>div>h3{
+	background-position: -1078px -755px;
+}
+.skill-information .section-con{
+	background: url(../images/tenngu/sec2_bg_cafc6ce.png) no-repeat;
+	width: 1170px;
+}
+/* - 上面的头像 - */
+.pic-tx{
+    position: absolute;
+	width: 448px;
+    height: 160px;
+    right: 157px;
+    top: -64px;
+}
+.jx-pic{
+	float: left;
+	height:100%;
+	text-align: center;
+	vertical-align: bottom;
+}
+.jx-pic>p{
+	font-size: 30px;
+}
+.jx-pic>img{
+	display: inline-block;
+	padding:10px;
+	border:solid 1px black;
+	background: white;
+	vertical-align: bottom;
+}
+.jx-after{float: right}
+/* - 式神数据 - */
+.s-con-data{
+	overflow: hidden;
+	margin:104px 0 0 340px;
+}
+.s-con-data ul{float: left}
+.s-con-data li{
+	border-bottom:dashed 1px black;
+	width: 135px;
+    height: 38px;
+	line-height: 38px;
+}
+.data-jx-b{margin-left:55px;}
+.data-jx-b li,.data-jx-a li{width:206px;}
+.data-jx-a{margin-left:136px;}
+.data-jx-a em+span{
+	display: inline-block;
+	width: 76px;
+}
+.span-red{
+	color: #ca0000;
+}
+/* - icon - */
+em{
+	display: inline-block;
+	background: url(../images/tenngu/page_z_8c36890.png) no-repeat;
+	width: 17px;
+    height: 14px;
+    vertical-align: middle;
+    margin-right: 23px;
+}
+.icon-attack{
+	background-position: -731px -428px;
+}
+.icon-life{
+	background-position: -661px -428px;
+}
+.icon-defence{
+	background-position: -640px -428px;
+}
+.icon-speed{
+	background-position: -713px -428px;
+}
+.icon-baoji,.icon-baoshang{
+	background-position: -681px -428px;
+}
+.icon-attach{
+	background-position: -748px -428px;
+}
+.icon-oppsite{
+	background-position: -697px -428px;
+}
+.icon-level{
+	width: 19px;
+    height: 25px;
+    margin:0 0 0 50px;
+}
+.icon-a{
+	background-position: -516px -428px;
+}
+.icon-b{
+    background-position: -604px -428px;
+}
+.icon-c{
+	background-position: -584px -428px;
+}
+.icon-d{
+	background-position: -565px -428px;
+}
+.icon-s{
+	background-position: -623px -428px;
+}
+/* - 技能 - */
+.con-skill{
+	margin-left:370px;
+	padding:20px 0;
+}
+.con-skill>div,.sk-primary>div,.sk-after>div{float: left;}
+.sk-primary{
+	width:400px;
+	margin-right: 105px;
+}
+.sk-label{
+	background: #f0eeeb;
+	font-size: 16px;
+	width:15px;
+	line-height: 18px;
+	padding:10px 5px;
+}
+.sk-list {
+	position: relative;
+	margin-left:10px;
+}
+.sk-list a{
+	display: inline-block;
+	border-radius: 50%;
+	border: solid 1px #dfdfdf;
+}
+.sk-list a:hover{background: yellow;}
+.sk-list a:hover ~ .sk-detail{opacity: 1}
+.sk-list img{
+	margin:4px;
+	width: 68px;
+	height: 68px;
+	vertical-align: bottom;
+}
+.sk-list p{
+	text-align: center;
+	font-size: 12px;
+	padding:2px 0;
+}
+/* - 技能详情 - */
+.sk-detail{
+	opacity: 0;
+	position: absolute;
+	top:65px;
+	left:-94px;
+	z-index: 10;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.sk-detail>span{
+	display: inline-block;
+	background: url(../images/tenngu/page_z_8c36890.png) no-repeat;
+	background-position: -817px -428px;
+	width: 18px;
+    height: 11px;
+    vertical-align: bottom;
+}
+.sk-detail>div{
+	margin-top:-1px;
+	background: #dccead; 
+	padding:20px;
+	border:solid 1px black;
+	width:244px;
+}
+.sk-detail>div,.sk-detail>div>p{text-align: left;}	
+.sk-after>div:last-child>p{
+	margin:25px 0 0 20px ;
+	font-size: 16px;
+}
+/* -- 03-玩家攻略 -- */
+.strategy{padding-top:60px;}
+.strategy>div>h3{
+	background-position: -646px -885px;
+	width: 282px;
+}
+.strategy .section-con{
+	position: static;
+	margin-left:-104px;
+	margin-top:41px;
+	background-position: -173px 0px;
+	width: 1304px;
+	height:428px;
+	overflow: hidden;
+}
+/* - 攻略文章列表 - */
+.strategy-con{
+	position: relative;
+	overflow: hidden;
+	width:960px;
+	margin-left: 330px;
+	padding-top: 25px;
+	height:370px;
+}
+.strategy-con>ul{
+	left:960px;
+	position: absolute;
+	overflow: hidden;
+	width:960px;
+	transition: all .6s ease;
+	opacity: 0;
+}
+.strategy-con>ul:first-child{left:0;opacity: 1}
+.strategy-con>ul:last-child{left:-960px;opacity: 1}
+.strategy-list{
+	float: left;
+	width:380px;
+	height: 52px;
+	margin:8px 50px 0;
+	border-bottom:dashed 1px #c3c3c3;
+}
+.strategy-list>p{
+	margin-top: 5px;
+	font-size: 12px;
+	color:#999;
+}
+.strategy-list>a{color:black}
+.strategy-list>a:hover{color:#d09a77}
+/* - 分页 按钮 - */
+.s-pagination{
+	position: absolute;
+	width:130px;
+	height:42px;
+	left: 50%;
+    margin-left: 43px;
+    bottom: -15px;
+}
+.btn-page{
+	display: inline-block;
+	width: 42px;
+    height: 42px;
+    background: #efece9;
+    margin-left:14px;
+}
+.btn-page>em{
+	width: 27px;
+    height: 12px;
+    margin-top: 13px;
+    margin-left: 8px;
+}
+.page-prev>em{
+	background-position: -763px -428px;	
+}
+.page-next>em{
+	background-position: -790px -428px;
+}
+/* -- 04-精选玩家同人 --*/
+.fanart{padding:63px 0;background: #f1efe9;}
+.fanart>div>h3{
+    background-position: -278px -885px;
+    width: 368px;
+    position: relative;
+}
+.btn-all{
+	position: absolute;
+	bottom: 20px;
+	left:1106px;
+	width:90px;
+	height:25px;
+	line-height: 25px;
+	text-align: center;
+	border: 2px solid #333;
+}
+.fanart .section-con{
+	position: static;
+	/*height:325px;*/
+	width: 100%;
+	margin-top:41px;
+	background: transparent;
+}
+.fanart-con>ul{width: 1267px;overflow: hidden;}
+.fanart-list{
+	float: left;
+	margin-right:51px;
+	width:262px;
+}
+.fanart-list>a{
+	display: inline-block;
+	width: 262px;
+    height: 147px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.fanart-list img{
+	width: 262px;
+    height: 147px;
+    transition: all 0.3s linear;
+}
+.fanart-list>a:hover img{
+	transform: scale(1.05);
+}
+/* -- 05-玩家评论区 -- */
+.comment>div>h3{
+	background-position: -928px -885px;
+	width: 319px;
+}
+.comment .section-con{
+	margin:41px auto 0;
+	width:1030px;
+	position: static;
+	background: transparent;
+}
+.comment-list{
+	padding: 30px 15px 0 60px;
+}
+.com-per>img{
+	position: absolute;
+	width: 35px;
+    height: 35px;
+    left: -50px;
+}
+.com-per>span{font-size: 12px;}
+.com-per>span:nth-child(2){margin-left:20px;color:#ec7d7a;}
+.com-per>span:last-child{
+	color: #c9c9c9;
+	float: right;
+}
+.com-con{
+	position: relative;
+	background: #f8f8f8;
+    border: 1px solid #eaeaea;
+    margin-top:15px;
+    padding: 18px 30px 8px;
+}
+.com-con>em{
+	display: inline-block;
+	background-position: -835px -428px;
+    position: absolute;
+    left:35px;
+    top:-9px;
+	width: 18px;
+    height: 9px;
+}
+.com-con>p{ padding-bottom:10px; }
+.com-con>a{
+	float: right;
+    font-size: 16px;
+    color: #ec7d7a;
+}
+/* - 套着的回复 - */
+.com-rep{
+	border:solid 1px #ddd;
+	padding:8px 8px 8px 12px;
+	margin-bottom:10px;
+}
+.com-rep>span{color:#ec7d7a;}
+.com-rep>p{margin-top:6px; color: #888;}
+.com-send:after,.com-con:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+/* - 分页 - */
+.com-pagination{
+	margin:20px 0 45px;
+	text-align: center;
+}
+.c-page{
+	display: inline-block;
+	width: 24px;
+	height:24px;
+	line-height: 24px;
+	text-align: center;
+}
+.active,.c-page:hover{
+	background: #ff6d69;
+	color: white;
+}
+/* - 发送评论 - */
+.btn-login{
+	color:#ec7d7a;
+	font-size: 16px;
+	float: right;
+	margin-bottom: 15px;
+}
+.my-com>div:nth-child(2){
+	padding:5px;
+    border: solid 1px #dedede;
+}
+.my-com textarea{
+	margin-bottom: 30px;
+	display: block;
+	width:100%;
+    height: 106px;
+    border:0;
+    outline: 0;
+    resize: none; /* 右下角的角标 */
+     /*overflow: auto;*/
+}
+.com-send>span{
+	position: absolute;
+	left: 15px;
+	top: -30px;
+    font: 700 18px/28px Georgia;
+    color: #bbb;
+}
+.com-send>div{float: right;}
+.com-send input[type=checkbox],label{cursor: pointer;}
+.btn-send{
+	display: inline-block;
+	color: #fff;
+    background: #fdafad;
+    border: 0;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: center;
+}
+/* -- 06-更多式神 -- */
+.sikigami-more>div>h3{
+	background-position: 0px -885px;
+	width: 278px;
+}
+.sikigami-more .section-con{
+	position: relative;
+	margin-top:41px;
+	background: white;
+	width: 100%;
+}
+.skgm-con{
+	position: relative;
+	margin-left:85px;
+	width:1008px;
+	height:144px;
+	overflow: hidden;
+}
+.skgm-con>ul{
+	position: absolute;
+	left:1008px;
+	opacity: 0;
+	transition: all .6s ease;
+}
+.skgm-con>ul:first-child{left:0;opacity: 1}
+.skgm-con>ul:last-child{left:-1008px;opacity: 1}
+.skgm-list{float: left;cursor: pointer;}
+.skgm-list a{color:#333}
+.skgm-list:hover p{color:#d09a77;}
+.con-sikigami{
+	margin:0 13px;
+	display: inline-block;
+	text-align: center;width: 118px;
+	height:118px;
+}
+.con-sikigami>img{
+	width: 118px;
+	height:118px;
+	border-radius: 50%;
+}
+.emm{
+	cursor: pointer;
+}
+/*.con-sikigami>img*/
+/* - 分页 - */
+.skgm-pagination{
+	position: absolute;
+	width: 100%;
+	top:16px;
+}
+.btn-s,.btn-s>em{
+	display: inline-block;
+}
+.btn-s>em{
+	width: 46px;
+    height: 92px;
+}
+.s-prev>em{
+	background-position: -1410px -609px;
+}
+.s-next{float: right}
+.s-next>em{
+	background-position: -1398px -458px;
+}
+
+/* --- footer ---  */
+#footer #netease{
+	background:url("../images/netease.1.png") !important;
+}
+#footer #nie{
+	background:url("../images/nie.1.png") !important;
+}
+#footer a{color:black}
+#footer .copy-r-t>p,.copy-r-b>span{color:black !important;}
+#footer .parent{color:white};

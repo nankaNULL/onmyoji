@@ -1,0 +1,153 @@
+<link rel="stylesheet" href="./css/s_header.css">
+<div id="con-header">
+	<div class="head-l">
+		<span>扫码下载</span>
+		<img src="./images/57b280b496dee47507111c56NRN73rVj.png" alt="">
+		<a href="#">
+			<img src="./images/72.webp" alt="">
+			<div>
+				<h1>阴阳师</h1>
+				<p>网易和风匠心巨制</p>
+			</div>
+		</a>
+	</div>
+	<div class="head-r">
+		<ul class="r-nav">
+			<li>
+				<a href="#">官网首页</a>
+				<span class="span-xg">/</span>
+			</li>
+			<li><a href="#">新闻资讯</a><span class="span-xg">/</span></li>
+			<li><a href="#">游戏攻略</a><span class="span-xg">/</span></li>
+			<li><a href="#">同人社区</a><span class="span-xg">/</span></li>
+			<li class="nav-more">
+				<a href="#">官方渠道</a><span class="span-xg">/</span>
+				<!-- <div class="gf-more clearfix">
+					<div class="list-item qq-group">
+						<ul class="clearfix">
+							<li>204422345(1群)</li>
+							<li>204422345(2群)</li>
+							<li>204422345(3群)</li>
+							<li>204422345(4群)</li>
+							<li>204422345(5群)</li>
+							<li>204422345(6群)</li>
+							<li>204422345(7群)</li>
+							<li>204422345(8群)</li>
+							<li>204422345(9群)</li>
+							<li>204422345(10群)</li>
+						</ul>
+						<p>官方QQ群</p>
+					</div>
+					<div href="#" class="list-item qr-code">
+						<img src="./images/wx_d99aea4.jpg" alt="">
+						<p id="gf-wx">官方微信</p>
+					</div>
+					<a href="#" class="list-item qr-code">
+						<img src="./images/wb_2cdebbf.png" alt="">
+						<p id="gf-wb">官方微博</p>
+					</a>
+					<a href="#" class="list-item list-emm">
+						<div>
+							<span class="common-icon icon-baidu" ></span>
+							<p>百度贴吧</p>
+						</div>
+					</a>
+					<a href="#" class="list-item list-emm">
+						<div>
+							<span class="common-icon icon-luntan"></span>
+							<p>官方论坛</p>
+						</div>
+					</a>
+				</div> -->
+			</li>
+			<li><a href="#">周边商城</a><span class="span-xg">/</span></li>
+			<li><a href="#">藏宝阁</a><span class="span-xg">/</span></li>
+			<li><a href="#">网易大神</a></li>
+		</ul>
+		<div class="gf-more clearfix">
+			<div class="list-item qq-group">
+				<ul class="clearfix">
+					<li>204422345(1群)</li>
+					<li>204422345(2群)</li>
+					<li>204422345(3群)</li>
+					<li>204422345(4群)</li>
+					<li>204422345(5群)</li>
+					<li>204422345(6群)</li>
+					<li>204422345(7群)</li>
+					<li>204422345(8群)</li>
+					<li>204422345(9群)</li>
+					<li>204422345(10群)</li>
+				</ul>
+				<p>官方QQ群</p>
+			</div>
+			<div href="#" class="list-item qr-code">
+				<img src="./images/wx_d99aea4.jpg" alt="">
+				<p id="gf-wx">官方微信</p>
+			</div>
+			<a href="#" class="list-item qr-code">
+				<img src="./images/wb_2cdebbf.png" alt="">
+				<p id="gf-wb">官方微博</p>
+			</a>
+			<a href="#" class="list-item list-emm">
+				<div>
+					<span class="common-icon icon-baidu" ></span>
+					<p>百度贴吧</p>
+				</div>
+			</a>
+			<a href="#" class="list-item list-emm">
+				<div>
+					<span class="common-icon icon-luntan"></span>
+					<p>官方论坛</p>
+				</div>
+			</a>
+		</div>
+	</div>	
+</div>
+
+<script type="text/javascript" src="./lib/jquery/jquery.min.js"></script>
+<script>
+	$(function(){
+		$(".head-r").on("mouseover",".nav-more",function(){
+			console.log("emmm");
+			$(".nav-more a").css("color","#cc4336");
+			$("#con-header").addClass("bg-white");
+			$(".gf-more").css({"height":"200px"});
+		});
+		/**/$(".head-r").on("mouseout",function(){
+			$(".nav-more a").css("color","#fff")
+			$("#con-header").removeClass("bg-white");
+			$(".gf-more").css({"height":"0"});
+		});
+		$(".qr-code").hover(
+			function(){
+				codeName = $(this).children().last().html();
+				$(this).children().last().html("网易阴阳师手游");
+			},
+			function(){
+				$(this).children().last().html(codeName);
+			}
+		);
+	
+		var $header = $("#con-header");
+		var $logo = $("#logo");
+		var scrollTop = $(window).scrollTop();
+		//console.log(scrollTop);
+		isShow(scrollTop);
+		$(window).scroll(function(){
+			//console.log(scrollTop);
+			scrollTop = $(this).scrollTop();
+			isShow(scrollTop);
+		});
+		function isShow(scrollTop){
+			
+			if(scrollTop >= 100){
+				$header.addClass("scrolled"); 
+				if($logo) $logo.addClass("hide");
+			}
+			else{
+				$header.removeClass("scrolled");
+				if($logo) $logo.removeClass("hide");
+			}
+		}
+	});
+</script>

@@ -1,0 +1,297 @@
+body,ul,input,p,a,h1{margin:0;padding:0;font-size:14px;}
+ul{list-style: none;}
+a{
+	text-decoration: none;
+	color:black;
+	font-size: 14px;
+}
+body{
+	min-width: 1400px;
+	max-width: 1920px;
+	margin:0 auto;
+}
+/*.con-header div,.con-header ul,.con-header li{border:solid 1px red;}*/
+.f-position{position:relative;}
+.clearfix{overflow: hidden;}
+.bg{
+	background:url(../images/bg.jpg) no-repeat bottom center;
+	width: 100%;
+	height:892px;
+	overflow: hidden;
+}
+.container{
+	width: 1180px;
+	height:892px;
+	margin:0 auto;
+}
+.container>div{float: left;}
+.hidden{visibility: hidden;}
+
+
+/* -- 左边 logo 和 选择 搜索-- */
+.ss-l{
+	width:188px;
+	padding-top:30px;
+}
+.ss-l-logo{
+	background: url(../images/icon.png) no-repeat;
+	background-position: 0px 0px;
+	width: 103px;
+	height:298px;
+	margin:0 auto 30px;
+}
+/* - select - */
+.ss-l-select li{
+	text-align: center;
+	margin-bottom:17px;
+}
+.ss-l-select li>a{
+	display: inline-block;
+	width: 100%;
+	height: 34px;
+}
+.ss-l-select .active .arrow{}
+.ss-l-select .active .arrow{
+	left: 25px;
+	opacity: 1;
+}
+.arrow{
+	position: absolute;
+	left:0px;
+	top:5px;
+	display:inline-block;
+	background: url(../images/icon.png) no-repeat;
+	background-position: -103px -225px;
+	width: 31px;
+	height: 19px;
+	opacity: 0;
+	transition: all 0.3s;
+}
+.select-icon{
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat;
+	width: 53px;
+	height: 29px;
+}
+.icon-all{
+	background-position: -223px -262px;
+	width: 50px;
+}
+.ss-l-select .active .icon-all{
+	background-position: -267px -233px;
+	width: 54px;
+}
+.icon-liandong{
+	background-position: -170px -196px;
+	width: 48px;
+	height:23px;
+}
+.ss-l-select .active .icon-liandong{
+	background-position: -273px -262px;
+	width: 51px;
+	height:29px;
+}
+.icon-sp{
+	background-position: -275px -204px;
+	width:24px;
+}
+.ss-l-select .active .icon-sp{
+	background-position: -320px -233px;
+	width:28px;
+}
+.icon-ssr{
+	background-position: -299px -204px;
+	width:40px;
+}
+.ss-l-select .active .icon-ssr{
+	background-position: -235px -204px;
+	width:40px;
+}
+.icon-sr{
+	background-position: -339px -204px;
+	width:24px;
+}
+.ss-l-select .active .icon-sr{
+	background-position: -363px -204px;
+	width:28px;
+}
+.icon-r{
+	background-position: -223px -204px;
+	width:12px;
+}
+.ss-l-select .active .icon-r{
+	background-position: -235px -233px;
+	width:16px;
+}
+.icon-n{
+    background-position: -223px -233px;
+    width:12px;
+}
+.ss-l-select .active .icon-n{
+    background-position: -251px -233px;
+    width:15px;
+}
+.icon-gt{
+	background-position: -170px -173px;
+	width:48px;
+	height:23px;
+}
+.ss-l-select .active .icon-gt{
+	background-position: -323px -262px;
+	width:54px;
+	height:29px;
+}
+/* - search - */
+.ss-l-search{
+	margin:0 auto;
+	width: 162px;
+	height:25px;
+	border:solid 2px black;
+	overflow: hidden;
+}
+.icon-search{
+	float: left;
+	margin:2px 0 0 4px ;
+	background-position: -370px -233px;
+	width:20px;
+	height:20px;
+}
+.ss-l-search input{
+	float: left;
+	width: 82px;
+	height:100%;
+	border:0;
+	background: transparent;
+}
+.ss-l-search a{
+	float: left;
+	display: inline-block;
+	width:50px;
+	height:25px;
+	line-height: 25px;
+	border-left: solid 2px black;
+	text-align: center;
+}
+/* -- 右边 式神录 还有 底部-- */
+.ss-r-skgm{
+    width: 900px;
+    height: 576px;
+    margin-top: 115px;
+    margin-left: 85px;
+    overflow: hidden;
+}
+/* - 滚动条样式 - */
+.ss-r-skgm:hover{overflow: auto;}
+.ss-r-skgm::-webkit-scrollbar{
+	width:5px;
+	/*height: 1px;*/
+}
+.ss-r-skgm::-webkit-scrollbar-thumb{
+	background:#a4a4a4;
+	border-radius: 10px;
+}
+/* - 式神 - */
+.sikigami{
+	float: left;
+	margin-bottom:30px;
+	height:163px;
+}
+.sikigami>a{
+	display: inline-block;
+	width:148px;
+	text-align: center;
+}
+.con-sikigami{
+	margin:0 auto;
+	width:120px;
+	height: 120px;
+}
+.con-sikigami>span{
+	background: url(../images/icon.png) no-repeat -103px 0px;
+}
+.con-sikigami+p{
+	margin-top:10px;
+}
+.position-lt{
+	position: absolute;
+	top:0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+}
+.cover{
+	width:148px;
+	background: rgba(255,255,255,.8);
+	opacity: 0;
+	transition: all 0.2s linear;
+}
+.cover span{
+	display: inline-block;
+	margin:50px auto;
+	background: url(../images/icon.png) no-repeat -170px -120px;
+	width: 45px;
+    height: 53px;
+}
+.sikigami:hover .cover{
+	opacity: 1;
+}
+#content-ld,#content-sp,#content-ssr,#content-sr,#content-r,#content-n,#content-gt{
+	display: none;
+}
+/* - 滚动加载更多的提示 - */
+#scroll-more{
+	width:130px;
+	height:44px;
+	margin:20px auto;
+	text-align: center;    
+	color: #bd9f57;
+}
+@keyframes float{
+	0%{margin-top:3px;}
+	100%{margin-top:13px;}
+}
+#scroll-more>span{
+	display: inline-block;
+	background: url(../images/icon.png) no-repeat -134px -225px;
+    width: 20px;
+    height: 16px;
+    animation:float 0.3s ease-out infinite alternate;
+
+}
+/* -- 底部版权 -- */
+/* .footer{width: 900px;} */
+.ft-share{
+	text-align: center;
+	margin:20px 0;
+}
+.ft-share>span{font-size: 12px;}
+.share-list{margin-right:25px;}
+/*.share-list>i{*/
+	/*display: inline-block;*/
+	/*width:18px;
+	height:18px;*/
+	/*vertical-align: middle;*/
+/*}*/
+.share-list:hover{color:red;}
+/* - copy - */
+.ft-copy>div,.copy-r-b p{float: left;}
+.copy-l{
+	margin:0 20px 0 25px;
+	padding-top:5px;
+}
+.copy-l img{
+	vertical-align: top;
+}
+.pl-2{padding-left:12px;}
+.copy-r p,.copy-r span,.copy-r a{font-size: 12px;}
+.copy-r a:hover{
+	text-decoration: underline;
+}
+.copy-r-b{margin-top:5px;}
+.copy-r-b>span{line-height: 25px;}
+.parent{
+	float: right;
+	background-color: #610000;
+	color:white;
+	padding:5px 3px;
+}
