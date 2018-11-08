@@ -8,14 +8,44 @@
 		<meta name="description" content="大天狗技能详解">
 		<meta name="keywords" content="大天狗">
 		<link rel="stylesheet" href="./css/scrollnav.css">
+		<link rel="stylesheet" href="./css/video.css">
 		<link rel="stylesheet" href="./css/tenngu.css">
 		<script type="text/javascript" src="./lib/jquery/jquery.min.js"></script>
 		<script type="text/javascript" src="./js/sikigami.js"></script>
+		<script src="./lib/jquery/jquery.min.js"></script>
+		<script src="./js/tenngu.js"></script>
+		<script src="./lib/vue/vue.js"></script>
+		<script src="./lib/vue/axios.min.js"></script>
+		<script>
+			$(function(){
+				$('#header').load('s_header.html#con-header');
+				$('#footer').load('s_footer.html');
+				console.log($('.footer'));
+			})
+		</script>
 	</head>
 	<body>
-		<div class="main">
-			<a href="#" class="tab-fixed left"><img src="./images/tenngu/265(1).png" alt=""></a>
-			<a href="#" class="tab-fixed right"><img src="./images/tenngu/400(1).png" alt=""></a>
+		<div class="video-content">
+			<div class="m-video">
+				<a href="javascript:void(0);"></a>
+				<div class="p-video">
+					<video autoplay="autoplay" controls preload="metadata" width="798" height="520">
+						<source src="">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="main" id="app">
+			<a href="#" class="tab-fixed left">
+				<img src="./images/tenngu/265(1).png" alt="">
+				<span class="name">茨木童子</span>
+				<span class="next">上一个</span>
+			</a>
+			<a href="#" class="tab-fixed right">
+				<img src="./images/tenngu/400(1).png" alt="">
+				<span class="name">盗墓小鬼</span>
+				<span class="next">下一个</span>
+			</a>
 			<div class="scroll-nav">
 				<ul>
 					<li class="s-nav-list">
@@ -82,10 +112,10 @@
 				<div id="logo"><img src="./images/100.webp" alt=""></div>
 				<div class="bg-shower">
 					<div class="url-page bg-logo "></div>
-					<div class="skgm-search clearfix">
+					<!-- <div class="skgm-search clearfix">
 						<input type="text" value="萤草">
 						<a href="#" class="btn-search">搜索</a>
-					</div>
+					</div> -->
 				</div>
 				<div class="bg-r">
 					<div class="url-page person-name ">
@@ -116,10 +146,12 @@
 				<div>
 					<h3 class="url-page"></h3>
 					<div class="section-con">
-						<a href="#" class="url-page s-con-cv">
+						<a href="#" class="url-page s-con-cv" title="前野智昭">
 							<span>CV</span>
 							<span class="cv-name">前野智昭</span>
-							<i class="url-page"></i>
+							<i class="url-page">
+								<audio src="" autoplay="autoplay"></audio>
+							</i>
 						</a>
 						<div class="s-con-txt">
 							<h3>
@@ -382,154 +414,10 @@
 					<h3 class="url-page"></h3>
 					<div class="section-con">
 						<div class="strategy-con">
-							<ul>
-								<li class="strategy-list">
-									<a href="#">【为崽而战】大天狗发来捷报并向你抛一个滚筒洗衣机</a>
-									<p>作者：Yeno1996</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">大天狗攻略——风羽雅笛，听吾之命</a>
-									<p>作者：段段以及南墙</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师单人挂机阴界之门50层阵容攻略</a>
-									<p>作者：小k</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">【斗技面面观】被动御魂封印流+一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之被动御魂封印流2-控制流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之传统一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师手游大天狗ssr阵容搭配推荐</a>
-									<p>作者：小k</p>
-								</li>	
-							</ul>
-							<ul>
-								<li class="strategy-list">
-									<a href="#">【为崽而战】鹅妈妈木木木木木</a>
-									<p>作者：Yeno1996</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">大天狗攻略——风羽雅笛，听吾之命</a>
-									<p>作者：段段以及南墙</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师单人挂机阴界之门50层阵容攻略</a>
-									<p>作者：小k</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">【斗技面面观】被动御魂封印流+一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之被动御魂封印流2-控制流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之传统一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师手游大天狗ssr阵容搭配推荐</a>
-									<p>作者：小k</p>
-								</li>
-							</ul>
-							<ul>
-								<li class="strategy-list">
-									<a href="#">许愿奶狗QAQ</a>
-									<p>作者：nanka</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">大天狗攻略——风羽雅笛，听吾之命</a>
-									<p>作者：段段以及南墙</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师单人挂机阴界之门50层阵容攻略</a>
-									<p>作者：小k</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">【斗技面面观】被动御魂封印流+一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之被动御魂封印流2-控制流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之传统一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师手游大天狗ssr阵容搭配推荐</a>
-									<p>作者：小k</p>
-								</li>
-							</ul>
-							<ul>
-								<li class="strategy-list">
-									<a href="#">求彼岸花，妖刀青灯酒吞茨木 换 彼岸花</a>
-									<p>作者：nanka</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">大天狗攻略——风羽雅笛，听吾之命</a>
-									<p>作者：段段以及南墙</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师单人挂机阴界之门50层阵容攻略</a>
-									<p>作者：小k</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">【斗技面面观】被动御魂封印流+一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之被动御魂封印流2-控制流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之传统一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师手游大天狗ssr阵容搭配推荐</a>
-									<p>作者：小k</p>
-								</li>
-							</ul>
-							<ul>
-								<li class="strategy-list">
-									<a href="#">bbsbag</a>
-									<p>作者：nanka</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">大天狗攻略——风羽雅笛，听吾之命</a>
-									<p>作者：段段以及南墙</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师单人挂机阴界之门50层阵容攻略</a>
-									<p>作者：小k</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">【斗技面面观】被动御魂封印流+一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之被动御魂封印流2-控制流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">斗技面面观之传统一波流</a>
-									<p>作者：红豆饼</p>
-								</li>
-								<li class="strategy-list">
-									<a href="#">阴阳师手游大天狗ssr阵容搭配推荐</a>
-									<p>作者：小k</p>
+							<ul v-for="page in pages">
+								<li class="strategy-list" v-for="(strategy,i) in strategys" v-if="i>=(page-1)*7&&i<page*7">
+									<a href="#">{{strategy.title}}</a>
+									<p>作者：{{strategy.user}}</p>
 								</li>
 							</ul>
 						</div>
@@ -585,94 +473,32 @@
 					<div class="section-con">
 						<div class="comment-container">
 							<div class="comment-con">
-								<div class="comment-list">
+								<div class="comment-list" v-for="comment in comments" :key="comment.id">
 									<div class="com-per f-position">
 										<img src="./images/tenngu/comment-pic_ff8e31a.jpg" alt="">
-										<span class="com-phone">15***21</span>
-										<span class="com-time">2018-05-17 13:25:07</span>
-									</div>
-									<div class="com-con">
-										<em></em>
-										<div class="com-rep">
-											<span>13***05</span>
-											<p>许愿大天狗</p>
-										</div>	
-										<p>大头狗废了</p>
-										<a href="#">( <span>41</span> ) 回复</a>
-									</div>
-								</div>
-								<div class="comment-list">
-									<div class="com-per f-position">
-										<img src="./images/tenngu/comment-pic_ff8e31a.jpg" alt="">
-										<span class="com-phone">zw***@163.com</span>
-										<span class="com-time">2018-05-16 12:21:56</span>
+										<span class="com-phone">{{comment.user}}</span>
+										<span class="com-time">{{comment.time}}</span>
 									</div>
 									<div class="com-con">
 										<em></em>	
-										<p>许愿大天狗🐶</p>
-										<a href="#">( <span>18</span> ) 回复</a>
-									</div>
-								</div>
-								<div class="comment-list">
-									<div class="com-per f-position">
-										<img src="./images/tenngu/comment-pic_ff8e31a.jpg" alt="">
-										<span class="com-phone">13***05</span>
-										<span class="com-time">2018-05-14 11:41:16</span>
-									</div>
-									<div class="com-con">
-										<em></em>	
-										<p>每天打一卡，狗子来我家！许愿大天狗！</p>
-										<a href="#">( <span>36</span> ) 回复</a>
-									</div>
-								</div>
-								<div class="comment-list">
-									<div class="com-per f-position">
-										<img src="./images/tenngu/comment-pic_ff8e31a.jpg" alt="">
-										<span class="com-phone">13***05</span>
-										<span class="com-time">2018-05-04 20:48:37</span>
-									</div>
-									<div class="com-con">
-										<em></em>	
-										<p>每天打一卡，狗子来我家！许愿大天狗！</p>
-										<a href="#">( <span>18</span> ) 回复</a>
-									</div>
-								</div>
-								<div class="comment-list">
-									<div class="com-per f-position">
-										<img src="./images/tenngu/comment-pic_ff8e31a.jpg" alt="">
-										<span class="com-phone">13***05</span>
-										<span class="com-time">2018-05-02 18:56:09</span>
-									</div>
-									<div class="com-con">
-										<em></em>	
-										<p>许愿大天狗</p>
-										<a href="#">( <span>26</span> ) 回复</a>
+										<p>{{comment.content}}</p>
+										<a href="#" @click.prevent="addZan(comment.id)">赞 ( <span>{{comment.zanNum}}</span> ) &nbsp;&nbsp;回复</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="com-pagination">
-							<a href="#" class="c-page active">1</a>
-							<a href="#" class="c-page">2</a>
-							<a href="#" class="c-page">3</a>
-							<a href="#" class="c-page">4</a>
-							<a href="#" class="c-page">5</a>
-							<a href="#" class="c-page">6</a>
-							<a href="#" class="c-page">7</a>
-							<a href="#" class="c-page">8</a>
-							<span>...</span>
-							<a href="#" class="c-page">126</a>
-							<a href="#" class="c-page">127</a>
+							<a href="#" class="c-page" v-for="c in cpage" @click.prevent="getComment(c)" :class="c == cpageNow?'active':''">{{c}}</a>
 						</div>
 						<div class="my-com">
 							<div class="clearfix">
 								<a href="#" class="btn-login">登录</a>
 							</div>
 							<div>
-								<textarea name="" ></textarea>
+								<textarea name="" v-model="content"></textarea>
 							</div>
 							<div class="com-send f-position">
-								<span>300</span>
+								<span>{{comNum}}</span>
 								<div >
 									<input type="checkbox" id="majia"/>
 									<label for="majia">我要穿马甲</label> 
@@ -878,13 +704,128 @@
 			</div>
 			<div id="footer"></div>
 		</div>
-		<script src="./lib/jquery/jquery.min.js"></script>
-		<script src="./js/tenngu.js"></script>
+		
+		<script>
+			new Vue({
+				el:"#app",
+				data:{
+					// 评论
+					cpage:5,
+					cpageNow:1,
+					comments:[],
+					lists:[
+						{id:1,user:"15***21",content:"大头狗废了",time:"2018-05-17 13:25:07",zanNum:41},
+						{id:2,user:"zw***@163.com",content:"许愿大天狗🐶",time:"2018-05-16 12:21:56",zanNum:18},
+						{id:3,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-14 11:41:16",zanNum:36},
+						{id:4,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-04 20:48:37",zanNum:18},
+						{id:5,user:"13***05",content:"许愿大天狗",time:"2018-05-02 18:56:09",zanNum:26},
+						{id:6,user:"st***@163.com",content:"酒吞和茨木这对基佬已经有了，现在跪求狗子和大舅",time:"2018-04-23 22:42:39",zanNum:9},
+						{id:7,user:"18***43",content:"许愿大天狗 来我家",time:"2018-04-16 22:44:53",zanNum:8},
+						{id:8,user:"29***@qq.com",content:"我抽到过辉夜，玉藻，一目，青灯，荒川，妖刀，小鹿，为嘛不给大天狗啊？",time:"2018-04-14 01:16:16",zanNum:8},
+						{id:9,user:"ji***@163.com",content:"不是bug，审题不够仔细，回合外免debuff，回合内不免疫debuff",time:"2018-04-08 10:12:06",zanNum:7},
+						{id:10,user:"26***@qq.com",content:"大号小号狗崽双全，开心",time:"2018-04-07 16:19:50",zanNum:2},
+						{id:11,user:"15***21",content:"大头狗废了",time:"2018-05-17 13:25:07",zanNum:41},
+						{id:12,user:"zw***@163.com",content:"许愿大天狗🐶",time:"2018-05-16 12:21:56",zanNum:18},
+						{id:13,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-14 11:41:16",zanNum:36},
+						{id:14,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-04 20:48:37",zanNum:18},
+						{id:15,user:"13***05",content:"许愿大天狗",time:"2018-05-02 18:56:09",zanNum:26},
+						{id:16,user:"st***@163.com",content:"酒吞和茨木这对基佬已经有了，现在跪求狗子和大舅",time:"2018-04-23 22:42:39",zanNum:9},
+						{id:17,user:"18***43",content:"许愿大天狗 来我家",time:"2018-04-16 22:44:53",zanNum:8},
+						{id:18,user:"29***@qq.com",content:"我抽到过辉夜，玉藻，一目，青灯，荒川，妖刀，小鹿，为嘛不给大天狗啊？",time:"2018-04-14 01:16:16",zanNum:8},
+						{id:19,user:"ji***@163.com",content:"不是bug，审题不够仔细，回合外免debuff，回合内不免疫debuff",time:"2018-04-08 10:12:06",zanNum:7},
+						{id:20,user:"26***@qq.com",content:"大号小号狗崽双全，开心",time:"2018-04-07 16:19:50",zanNum:2},
+						{id:21,user:"15***21",content:"大头狗废了",time:"2018-05-17 13:25:07",zanNum:41},
+						{id:22,user:"zw***@163.com",content:"许愿大天狗🐶",time:"2018-05-16 12:21:56",zanNum:18},
+						{id:23,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-14 11:41:16",zanNum:36},
+						{id:24,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-04 20:48:37",zanNum:18},
+						{id:25,user:"13***05",content:"许愿大天狗",time:"2018-05-02 18:56:09",zanNum:26},
+					],
+					// 发表评论
+					content:"",
+					// 攻略
+					pages:5,
+					strategys:[
+						{id:1,user:"Yeno1996",title:"【为崽而战】大天狗发来捷报并向你抛一个滚筒洗衣机"},
+						{id:2,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:3,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:4,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:5,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:6,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:7,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:8,user:"Yeno1996",title:"【为崽而战】鹅妈妈木木木木木"},
+						{id:9,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:10,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:11,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:12,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:13,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:14,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:15,user:"nanka",title:"许愿奶狗QAQ"},
+						{id:16,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:17,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:18,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:19,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:20,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:21,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:22,user:"ag",title:"【逢魔之时】逢魔之时阵容"},
+						{id:23,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:24,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:25,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:26,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:27,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:28,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:29,user:"nanka",title:"天狗挂机副本"},
+						{id:30,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:31,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:32,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:33,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:34,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:35,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+					]
+				},
+				methods:{
+					getComment(c){
+						this.comments = this.lists.slice((c-1)*5,c*5);
+						this.cpageNow = c;
+					},
+					addZan(zan){
+						this.lists[zan-1].zanNum++;
+					}
+				},
+				created(){
+					this.getComment(1);
+				},
+				computed:{
+					comNum(){
+						var num = 300;
+						num -= this.content.length;
+						return num;
+					}
+				}
+			})
+		</script>
 		<script>
 			$(function(){
-				$('#header').load('s_header.html#con-header');
-				$('#footer').load('s_footer.html');
-				console.log($('.footer'));
+				$(".person-name>a").click(function(){
+					$(".video-content").addClass("visible").find("video").prop("src","images/tenngu/217.mp4");
+				});
+				$(".m-video>a").click(function(){
+					$(".video-content").removeClass("visible").find("video").prop("src","");
+				});
+				var played = false;
+				$(".s-con-cv>i").click(function(e){
+					e.preventDefault();
+					var $audio = $(this).children("audio");
+					if(!played){
+						$(this).css("background-position","-466px -428px");
+						$audio.prop("src","images/tenngu/217.mp3");
+						played = true;
+					}
+					else{
+						$(this).css("background-position","-491px -428px");
+						$audio.prop("src","");
+						played = false;
+					}
+				})
 			})
 		</script>
 	</body>

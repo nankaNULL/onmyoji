@@ -49,7 +49,7 @@ $(function(){
 	})
 	// - 滚动 - 
 	var scrollTop = $(window).scrollTop();
-	$(".scroll-nav").toggleClass("visible",scrollTop>294);
+	//$(".scroll-nav").toggleClass("visible",scrollTop>294);
 	$(window).scroll(function(){
 		scrollTop = $(this).scrollTop();
 		$(".scroll-nav").toggleClass("visible",scrollTop>294);
@@ -76,10 +76,8 @@ $(function(){
 		var children = $(".scroll-nav li").removeClass("s-active").children();
 		children.each(function(){
 			var href = $(this).prop("href").split('#')[1];
-			console.log(section)
 			if(href == section){
 				$(this).parent().addClass("s-active");
-				console.log($(this));
 				return;
 			}
 		})
