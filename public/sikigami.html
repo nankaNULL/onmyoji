@@ -166,7 +166,7 @@
 				},
 				methods:{
 					getLists(rare,ld){
-						var url = "http://localhost:3000/sikigami";
+						var url = "http://localhost:3000/info/sikigami";
 						if(ld) url+="?liandong=1"
 						else url = rare?(url+"?rare="+rare):url;
 						axios.get(url).then((res)=>{

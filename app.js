@@ -24,6 +24,8 @@ app.use(session({
 //req.session
 /*使用路由器来管理路由*/
 app.use("/user",require("./routes/user.js"));
-app.use("/sikigami",require("./routes/sikigami.js"));
-app.use("/tenngu",require("./routes/tenngu.js"));
+app.use("/info",require("./routes/info.js"));
+app.use("/goods",require("./routes/goods.js"));
+app.use("/comment",require("./routes/comment.js"));
+
 

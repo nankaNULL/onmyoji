@@ -2,7 +2,8 @@ var express = require("express");
 var pool = require("../pool.js");
 var router = express.Router();
 
-router.get("/",(req,res)=>{
+// 式神录
+router.get("/sikigami",(req,res)=>{
     var rare = req.query.rare;
     var ld = req.query.liandong;
     if(rare){
@@ -24,5 +25,17 @@ router.get("/",(req,res)=>{
         })
     }
 });
+
+// 新闻资讯，游戏攻略
+router.get("/news",(req,res)=>{
+    var type = req.query.type;
+    pool.query(`select *from onmyoji_news where type=? order by time desc `,[type],(err,result)=>{
+        if(err) throw err;
+        if(result.length>0){
+            res.send(result);
+        }
+    })
+})
+
 
 module.exports = router;
