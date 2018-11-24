@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+		<title>大天狗</title>
+		<meta name="description" content="大天狗技能详解">
+		<meta name="keywords" content="大天狗">
+		<link rel="shortcut icon" href="img/min-img/icon.png" type="img/x-icon">
+		<link rel="stylesheet" href="./css/scrollnav.css">
+		<link rel="stylesheet" href="./css/video.css">
+		<link rel="stylesheet" href="./css/ssl_tenngu.css">
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/yys_ssl.js"></script>
+		<script src="./js/ssl_tenngu.js"></script>
+		<script src="./js/vue.js"></script>
+		<script src="./js/axios.min.js"></script>
+		<script>
+			$(function(){
+				$('#header').load('s_header.html#con-header');
+				$('#footer').load('s_footer.html');
+				console.log($('.footer'));
+			})
+		</script>
+		<style>
+			header>div.header_main>div.header{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="video-content">
+			<div class="m-video">
+				<a href="javascript:void(0);"></a>
+				<div class="p-video">
+					<video autoplay="autoplay" controls preload="metadata" width="798" height="520">
+						<source src="">
+					</video>
+				</div>
+			</div>
+		</div>
+		<div class="main" id="app">
+			<!--<header></header>-->
+			<!--<script>$("header").load('header_trsq.html');</script>-->
+			<a href="#" class="tab-fixed left">
+				<img src="./img/ssl/tenngu/265(1).png" alt="">
+				<span class="name">茨木童子</span>
+				<span class="next">上一个</span>
+			</a>
+			<a href="#" class="tab-fixed right">
+				<img src="./img/ssl/tenngu/400(1).png" alt="">
+				<span class="name">盗墓小鬼</span>
+				<span class="next">下一个</span>
+			</a>
+			<div class="scroll-nav">
+				<ul>
+					<li class="s-nav-list">
+						<a href="#section1">
+							<span class="icon">
+								<i></i>
+							</span>     
+							<span class="title">首屏</span>
+						</a>
+					</li>
+					<li class="s-nav-list s-active">
+						<a href="#section2">
+							<span class="icon">
+								<i></i>
+							</span>     
+							<span class="title">传记</span>
+						</a>
+					</li>
+					<li class="s-nav-list">
+						<a href="#section3">
+							<span class="icon">
+								<i></i>
+							</span>     
+							<span class="title">情报</span>
+						</a>
+					</li>
+					<li class="s-nav-list">
+						<a href="#section4">
+							<span class="icon">
+								<i></i>
+							</span>     
+							<span class="title">攻略</span>
+						</a>
+					</li>
+					<li class="s-nav-list">
+						<a href="#section5">
+							<span class="icon">
+								<i></i>
+							</span>     
+							<span class="title">同人</span>
+						</a>
+					</li>
+					<li class="s-nav-list">
+						<a href="#section6">
+							<span class="icon">
+								<i></i>
+							</span>     
+							<span class="title">评论</span>
+						</a>
+					</li>
+					<li class="s-nav-list">
+						<a href="#section7">
+							<span class="icon">
+								<i></i>
+							</span>     
+							<span class="title">式神录首页</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div id="header">
+			</div>
+			<div class="sikigami-bg" id="section1">
+				<div id="logo"><img src="./img/ssl/100.webp" alt=""></div>
+				<div class="bg-shower">
+					<div class="url-page bg-logo "></div>
+					<!-- <div class="skgm-search clearfix">
+						<input type="text" value="萤草">
+						<a href="#" class="btn-search">搜索</a>
+					</div> -->
+				</div>
+				<div class="bg-r">
+					<div class="url-page person-name ">
+						<a href="#" class="url-page p-video "></a>
+						<p>大天狗</p>
+						<span class="url-page p-logo"></span>
+					</div>
+					<div class="person-pic">
+						<div class="pic-con">
+							<img src="./img/ssl/tenngu/217.png" class="image-con show" >
+						</div>
+					</div>
+					<div class="person-tab">
+						<a href="javascript:void(0);" class="p-tab-f" data-target="./img/ssl/tenngu/217.png">
+							<i class="cur"></i>
+						</a>
+						<a href="javascript:void(0);" class="p-tab-s" data-target="./img/ssl/tenngu/217(1).png">
+							<i></i>
+						</a>
+						<a href="javascript:void(0);" class="p-tab-t" data-target="./img/ssl/tenngu/217-2.png">
+							<i></i>
+						</a>
+					</div>
+					<div class="resource-download"></div>
+				</div>
+			</div>
+			<div class="biography section-model" id="section2">
+				<div>
+					<h3 class="url-page"></h3>
+					<div class="section-con">
+						<a href="#" class="url-page s-con-cv" title="前野智昭">
+							<span>CV</span>
+							<span class="cv-name">前野智昭</span>
+							<i class="url-page">
+								<audio src="" autoplay="autoplay"></audio>
+							</i>
+						</a>
+						<div class="s-con-txt">
+							<h3>
+								<i class="url-page"></i>
+								<span>大天狗</span>
+							</h3>
+							<div class="con-txt">
+								<p><span>我就是正义的化身。</span></p>
+								<p><span>手刃过无数恶鬼，还曾与同样出身高贵的人类皇族武士并</span></p>
+								<p><span>肩作战过。</span></p>
+								<p><span>与怪物搏斗之人，必须要时刻提醒自己不要成为怪物。</span></p>
+								<p><span>但是我，我要让所有人都臣服于我，我要给世界带去新的</span></p>
+								<p><span>秩序。</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="skill-information section-model" id="section3">
+				<div>
+					<h3 class="url-page"></h3>
+					<div class="section-con">
+						<div class="pic-tx">
+							<div class="jx-pic jx-before">
+								<p>觉醒前</p>
+								<img src="./img/ssl/tenngu/217.jpg" alt="">
+							</div>
+							<div class="jx-pic jx-after">
+								<p>觉醒后</p>
+								<img src="./img/ssl/tenngu/217(2).jpg" alt="">
+							</div>
+						</div>
+						<div class="s-con-data">
+							<ul class="data-f">
+								<li>
+									<div>
+										<em class="icon-attack"></em>
+										<span>攻击</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-life"></em>
+										<span>生命</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-defence"></em>
+										<span>防御</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-speed"></em>
+										<span>速度</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-baoji"></em>
+										<span>暴击</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-baoshang"></em>
+										<span>暴击伤害</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-attach"></em>
+										<span>效果命中</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-oppsite"></em>
+										<span>效果抵抗</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="data-jx-b">
+								<li>
+									<div>
+										<em class="icon-level icon-a"></em>
+										<span>(133)</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-d"></em>
+										<span>(843)</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-c"></em>
+										<span>(65)</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-b"></em>
+										<span>(100)</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-s"></em>
+										<span>(10%)</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level"></em>
+										<span>(150%)</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level"></em>
+										<span>(0%)</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level"></em>
+										<span>(0%)</span>
+									</div>
+								</li>
+							</ul>
+							<ul class="data-jx-a">
+								<li>
+									<div>
+										<em class="icon-level icon-s"></em>
+										<span>(163)</span>
+										<span class="span-red">+30</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-c"></em>
+										<span>(939)</span>
+										<span class="span-red">+96</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-b"></em>
+										<span>(71)</span>
+										<span class="span-red">+7</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-s"></em>
+										<span>(110)</span>
+										<span class="span-red">+10</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level icon-s"></em>
+										<span>(10%)</span>
+										<span class="span-red">+0%</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level"></em>
+										<span>(150%)</span>
+										<span class="span-red">+0%</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level"></em>
+										<span>(0%)</span>
+										<span class="span-red">+0%</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<em class="icon-level"></em>
+										<span>(0%)</span>
+										<span class="span-red">+0%</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="con-skill">
+							<div class="sk-primary">
+								<div><p class="sk-label">基本技能</p></div>
+								<div class="sk-list">
+									<a href="#">
+										<img src="./img/ssl/tenngu/2171.png" alt=""> 
+									</a>
+									<p>风袭</p>
+									<div class="sk-detail">
+										<span></span>
+										<div>
+											<h3>风袭</h3>
+											<p>聚风形成旋转风刃攻击敌方目标，造成攻击100%伤害。</p>
+											<p>Lv.2伤害增加至105%</p>
+											<p>Lv.3伤害增加至110%</p>
+											<p>Lv.4伤害增加至115%</p>
+											<p>Lv.5伤害增加至125%</p>
+										</div>
+									</div>
+								</div>
+								<div class="sk-list">
+									<a href="#">
+										<img src="./img/ssl/tenngu/2172.png" alt="">
+									</a>
+									<p>钢铁之羽</p>
+									<div class="sk-detail">
+										<span></span>
+										<div>
+											<h3>钢铁之羽</h3>
+											<p>战斗开始及回合结束时，获得庇护。 回合开始时，失去庇护，获得雄姿英发，直到回合结束。</p>
+											<p>Lv.2雄姿英发提升暴击伤害增加至10%</p>
+											<p>Lv.3雄姿英发提升攻击增加至10%</p>
+											<p>Lv.4雄姿英发提升暴击伤害增加至15%</p>
+											<p>Lv.5雄姿英发提升攻击增加至15%</p>
+										</div>
+									</div>
+								</div>
+								<div class="sk-list">
+									<a href="#">
+										<img src="./img/ssl/tenngu/2173.png" alt="">
+									</a>
+									<p>羽刃暴风</p>
+									<div class="sk-detail">
+										<span></span>
+										<div>
+											<h3>羽刃暴风</h3>
+											<p>召唤飓风形成大型的羽刃旋涡攻击敌方全体4次，每次造成攻击37%伤害。</p>
+											<p>Lv.2伤害增加至39%</p>
+											<p>Lv.3伤害增加至41%</p>
+											<p>Lv.4伤害增加至43%</p>
+											<p>Lv.5伤害增加至45%</p>
+										</div>
+									</div>
+								</div>
+								<p style="clear:both"></p>
+							</div>
+							<div class="sk-after clearfix">
+								<div><p class="sk-label">觉醒技能</p></div>
+								<div><p>属性增强:攻击加成增加10%</p></div>
+							</div>
+							<p style="clear:both"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="strategy section-model" id="section4">
+				<div>
+					<h3 class="url-page"></h3>
+					<div class="section-con">
+						<div class="strategy-con">
+							<ul v-for="page in pages">
+								<li class="strategy-list" v-for="(strategy,i) in strategys" v-if="i>=(page-1)*7&&i<page*7">
+									<a href="#">{{strategy.title}}</a>
+									<p>作者：{{strategy.user}}</p>
+								</li>
+							</ul>
+						</div>
+						<div class="s-pagination">
+							<a href="javascript:void(0)" class="btn-page page-prev">
+								<em></em>
+							</a>
+							<a href="javascript:void(0)" class="btn-page page-next">
+								<em></em>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fanart section-model" id="section5">
+				<div>
+					<h3 class="url-page"><div class="btn-all">查看全部</div></h3>
+					<div class="section-con">
+						<div class="fanart-con">
+							<ul>
+								<li class="fanart-list">
+									<a href="#">
+										<img src="./img/ssl/tenngu/cb882c58-5fc7-4578-b828-95d5737c2d10.jpg" alt="">
+									</a>
+									<p>作者：-黑叔- 摄影/后期：@小刀-xd</p>
+								</li>
+								<li class="fanart-list">
+									<a href="#">
+										<img src="./img/ssl/tenngu/51253999-07f7-48c1-9788-e410966d4927.jpg" alt="">
+									</a>
+									<p>作者：玖年_原稿中</p>
+								</li>
+								<li class="fanart-list">
+									<a href="#">
+										<img src="./img/ssl/tenngu/b1df9ebf-c535-4b22-9a9a-b769e8b440f7.jpg" alt="">
+									</a>
+									<p>作者：扬大旗 &一拳超人sAPH古玉金名 摄影：@FifAN_枫泾</p>
+								</li>
+								<li class="fanart-list">
+									<a href="#">
+										<img src="./img/ssl/tenngu/7e72ba08-660a-4df4-9d77-db855bc586c4.jpg" alt="">
+									</a>
+									<p>作者：香油米团</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="comment section-model" id="section6">
+				<div>
+					<h3 class="url-page"></h3>
+					<div class="section-con">
+						<div class="comment-container">
+							<div class="comment-con">
+								<div class="comment-list" v-for="comment in comments" >
+									<div class="com-per f-position">
+										<img src="./img/ssl/tenngu/comment-pic_ff8e31a.jpg" alt="">
+										<span class="com-phone">{{comment.user}}</span>
+										<span class="com-time">{{comment.time}}</span>
+									</div>
+									<div class="com-con">
+										<em></em>	
+										<p>{{comment.content}}</p>
+										<a href="#" @click.prevent="addZan(comment.id)">赞 ( <span>{{comment.zanNum}}</span> ) &nbsp;&nbsp;回复</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="com-pagination">
+							<a href="#" class="c-page" v-for="c in cpage" @click.prevent="getComment(c)" :class="c == cpageNow?'active':''">{{c}}</a>
+						</div>
+						<div class="my-com">
+							<div class="clearfix blogin">
+								<a href="javascript:;" class="btn-login" @click="toLogin()">登录</a>  
+								<a href="javascript:;" class="btn-login" style="display: none">{{uname}}</a> 
+							</div>
+							<div>
+								<textarea name="" v-model="content"></textarea>
+							</div>
+							<div class="com-send f-position">
+								<span>{{comNum}}</span>
+								<div >
+									<input type="checkbox" id="majia"/>
+									<label for="majia">我要穿马甲</label> 
+									<a href="javascript:;" title="" class="btn-send" @click="sendComment()">发布</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="sikigami-more section-model" id="section7">
+				<div>
+					<h3 class="url-page"><div class="btn-all">查看全部</div></h3>
+					<div class="section-con">
+						<div class="skgm-pagination">
+							<a href="javascript:void(0)" class="btn-s s-prev">
+								<em></em>
+							</a>
+							<a href="javascript:void(0)" class="btn-s s-next">
+								<em></em>
+							</a>
+						</div>
+						<div class="skgm-con">
+							<ul class="clearfix">
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/210.png" alt="" class="emm">
+										<p>鬼使白</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/211.png" style="cursor: pointer!important; ">
+										<p>鬼使黑</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/212.png" alt="">
+										<p>童男</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/213.png" alt="">
+										<p>童女</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/214.png" alt="">
+										<p>饿鬼</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/215.png" alt="">
+										<p>孟婆</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/216.png" alt="">
+										<p>巫蛊师</p>
+									</a>
+								</li>
+							</ul>
+							<ul class="clearfix">
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/201.png" alt="">
+										<p>雪女</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/202.png">
+										<p>三尾狐</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/203.png" alt="">
+										<p>灯笼鬼</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/205.png" alt="">
+										<p>座敷童子</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/206.png" alt="">
+										<p>鲤鱼精</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/207.png" alt="">
+										<p>九命猫</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/208.png" alt="">
+										<p>狸猫</p>
+									</a>
+								</li>
+							</ul>
+							<ul class="clearfix">
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/210.png" alt="" class="emm">
+										<p>鬼使白</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/211.png" style="cursor: pointer!important; ">
+										<p>鬼使黑</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/212.png" alt="">
+										<p>童男</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/213.png" alt="">
+										<p>童女</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/214.png" alt="">
+										<p>饿鬼</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/215.png" alt="">
+										<p>孟婆</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/216.png" alt="">
+										<p>巫蛊师</p>
+									</a>
+								</li>
+							</ul>
+							<ul class="clearfix">
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/201.png" alt="">
+										<p>雪女</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/202.png">
+										<p>三尾狐</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/203.png" alt="">
+										<p>灯笼鬼</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/205.png" alt="">
+										<p>座敷童子</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/206.png" alt="">
+										<p>鲤鱼精</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/207.png" alt="">
+										<p>九命猫</p>
+									</a>
+								</li>
+								<li class="skgm-list">
+									<a href="#" class="con-sikigami">
+										<img src="./img/ssl/208.png" alt="">
+										<p>狸猫</p>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer"></div>
+		</div>
+		<script>
+			new Vue({
+				el:"#app",
+				data:{
+					uname:"",
+					islogin:false,
+					// 评论
+					cpage:5,
+					cpageNow:1,
+					comments:[],
+					lists:[
+						{id:1,user:"15***21",content:"大头狗废了",time:"2018-05-17 13:25:07",zanNum:41},
+						{id:2,user:"zw***@163.com",content:"许愿大天狗🐶",time:"2018-05-16 12:21:56",zanNum:18},
+						{id:3,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-14 11:41:16",zanNum:36},
+						{id:4,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-04 20:48:37",zanNum:18},
+						{id:5,user:"13***05",content:"许愿大天狗",time:"2018-05-02 18:56:09",zanNum:26},
+						{id:6,user:"st***@163.com",content:"酒吞和茨木这对基佬已经有了，现在跪求狗子和大舅",time:"2018-04-23 22:42:39",zanNum:9},
+						{id:7,user:"18***43",content:"许愿大天狗 来我家",time:"2018-04-16 22:44:53",zanNum:8},
+						{id:8,user:"29***@qq.com",content:"我抽到过辉夜，玉藻，一目，青灯，荒川，妖刀，小鹿，为嘛不给大天狗啊？",time:"2018-04-14 01:16:16",zanNum:8},
+						{id:9,user:"ji***@163.com",content:"不是bug，审题不够仔细，回合外免debuff，回合内不免疫debuff",time:"2018-04-08 10:12:06",zanNum:7},
+						{id:10,user:"26***@qq.com",content:"大号小号狗崽双全，开心",time:"2018-04-07 16:19:50",zanNum:2},
+						{id:11,user:"15***21",content:"大头狗废了",time:"2018-05-17 13:25:07",zanNum:41},
+						{id:12,user:"zw***@163.com",content:"许愿大天狗🐶",time:"2018-05-16 12:21:56",zanNum:18},
+						{id:13,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-14 11:41:16",zanNum:36},
+						{id:14,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-04 20:48:37",zanNum:18},
+						{id:15,user:"13***05",content:"许愿大天狗",time:"2018-05-02 18:56:09",zanNum:26},
+						{id:16,user:"st***@163.com",content:"酒吞和茨木这对基佬已经有了，现在跪求狗子和大舅",time:"2018-04-23 22:42:39",zanNum:9},
+						{id:17,user:"18***43",content:"许愿大天狗 来我家",time:"2018-04-16 22:44:53",zanNum:8},
+						{id:18,user:"29***@qq.com",content:"我抽到过辉夜，玉藻，一目，青灯，荒川，妖刀，小鹿，为嘛不给大天狗啊？",time:"2018-04-14 01:16:16",zanNum:8},
+						{id:19,user:"ji***@163.com",content:"不是bug，审题不够仔细，回合外免debuff，回合内不免疫debuff",time:"2018-04-08 10:12:06",zanNum:7},
+						{id:20,user:"26***@qq.com",content:"大号小号狗崽双全，开心",time:"2018-04-07 16:19:50",zanNum:2},
+						{id:21,user:"15***21",content:"大头狗废了",time:"2018-05-17 13:25:07",zanNum:41},
+						{id:22,user:"zw***@163.com",content:"许愿大天狗🐶",time:"2018-05-16 12:21:56",zanNum:18},
+						{id:23,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-14 11:41:16",zanNum:36},
+						{id:24,user:"13***05",content:"每天打一卡，狗子来我家！许愿大天狗！",time:"2018-05-04 20:48:37",zanNum:18},
+						{id:25,user:"13***05",content:"许愿大天狗",time:"2018-05-02 18:56:09",zanNum:26},
+					],
+					// 发表评论
+					content:"",
+					// 攻略
+					pages:5,
+					strategys:[
+						{id:1,user:"Yeno1996",title:"【为崽而战】大天狗发来捷报并向你抛一个滚筒洗衣机"},
+						{id:2,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:3,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:4,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:5,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:6,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:7,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:8,user:"Yeno1996",title:"【为崽而战】鹅妈妈木木木木木"},
+						{id:9,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:10,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:11,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:12,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:13,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:14,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:15,user:"nanka",title:"许愿奶狗QAQ"},
+						{id:16,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:17,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:18,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:19,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:20,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:21,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:22,user:"ag",title:"【逢魔之时】逢魔之时阵容"},
+						{id:23,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:24,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:25,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:26,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:27,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:28,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+						{id:29,user:"nanka",title:"天狗挂机副本"},
+						{id:30,user:"段段以及南墙",title:"大天狗攻略——风羽雅笛，听吾之命"},
+						{id:31,user:"小k",title:"阴阳师单人挂机阴界之门50层阵容攻略"},
+						{id:32,user:"红豆饼",title:"【斗技面面观】被动御魂封印流+一波流"},
+						{id:33,user:"红豆饼",title:"斗技面面观之被动御魂封印流2-控制流"},
+						{id:34,user:"红豆饼",title:"斗技面面观之传统一波流"},
+						{id:35,user:"小k",title:"阴阳师手游大天狗ssr阵容搭配推荐"},
+					]
+				},
+				methods:{
+					getComment(c){
+						this.comments = this.lists.slice((c-1)*5,c*5);
+						this.cpageNow = c;
+					},
+					addZan(zan){
+						this.lists[zan-1].zanNum++;
+					},
+					toLogin(){
+						$(".comment .section-con .my-com>div:first-child").hide().next().show();
+					},
+					isLogin(){
+						$.ajax({
+							url:"http://localhost:3000/user/islogin",
+							type:"get",
+							dataType:"json",
+							success:(res)=> {
+								console.log(res.msg);
+								if (res.ok===1){
+									$("a.btn-send").css({"cursor":"pointer","background":"#ff6d69"});
+									$(".comment .blogin").children(":first").hide().next().show();
+									this.uname = res.msg;
+									this.islogin = true;
+								}else {
+									this.islogin = false;
+									// if(confirm("请先登陆")){
+									// 	location.href="login.html?back="+location.href;
+									// }
+								}
+							}
+						})
+					},
+					sendComment(){
+						if(this.islogin)
+							this.apComment();
+						else{
+							if(confirm("请先登陆")){
+							 	location.href="login.html?back="+location.href;
+							}
+						}
+					},
+					apComment(){
+						console.log("emm");
+						var time = new Date().toLocaleString();
+						this.lists.unshift({id:1,user:this.uname,content:this.content,time:time,zanNum:0})
+						this.getComment(1)
+						this.cpage = Math.ceil(this.lists.length/5);
+						console.log(this.cpage);
+					}
+				},
+				created(){
+					this.getComment(1);
+					this.isLogin();
+				},
+				computed:{
+					comNum(){
+						var num = 300;
+						num -= this.content.length;
+						return num;
+					}
+				}
+			})
+		</script>
+		<script>
+			$(function(){
+				$(".person-name>a").click(function(){
+					$(".video-content").addClass("visible").find("video").prop("src","img/ssl/tenngu/217.mp4");
+				});
+				$(".m-video>a").click(function(){
+					$(".video-content").removeClass("visible").find("video").prop("src","");
+				});
+				var played = false;
+				$(".s-con-cv>i").click(function(e){
+					e.preventDefault();
+					var $audio = $(this).children("audio");
+					if(!played){
+						$(this).css("background-position","-466px -428px");
+						$audio.prop("src","img/ssl/tenngu/217.mp3");
+						played = true;
+					}
+					else{
+						$(this).css("background-position","-491px -428px");
+						$audio.prop("src","");
+						played = false;
+					}
+				})
+			})
+		</script>
+	</body>
+</html>
